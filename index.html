@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MUG | NAILY KHAIRIYA</title>
+
+    <style>
+      .image{
+        height: 200px;
+        border-radius: 20px;
+      }
+
+    </style>
+
   </head>
   <body>
-    <canvas id="rendering-surface" height="500" width="500"></canvas>
-    <form>
+
+    <div class="title">
+      <h1>Naily Khairiya - 5025201244</h1>
+      <p>Atur pencahayaan dan rotasi di bawah!</p>
+    </div>
+
+    <form class="input">
       <div>
         <label for="light-x">Light X<input type="range" name="light-x" id="light-x" min="0" max="100"></label>
         <label for="light-y">Light Y<input type="range" name="light-y" id="light-y" min="0" max="100"></label>
@@ -21,6 +35,19 @@
       </div>
     </form>
 
+    <!-- CANVAS -->
+    <canvas id="rendering-surface" height="300" width="500"></canvas>
+
+    <div class="Objek">
+      <h1>Objek Nyata</h1>
+      <div>
+        <img src="img/atas.jpeg" alt="atas" class="image">
+        <img src="img/bawah.jpeg" alt="bawah" class="image">
+        <img src="img/depan.jpeg" alt="depan" class="image">
+      </div>
+    </div>
+    
+    
     <script type="x-shader/x-vertex" id="vertex-shader">
       precision mediump float;
    
